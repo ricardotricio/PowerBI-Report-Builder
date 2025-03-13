@@ -11,7 +11,7 @@
       <am:Name>PBIRB</am:Name>
       <am:Version>15.7.1813.16</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-03-13T15:19:43.8428695Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-03-13T17:02:08.3397425Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
@@ -141,6 +141,34 @@
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="cities">
+      <Query>
+        <DataSourceName>SQL_ODBC</DataSourceName>
+        <CommandText>SELECT * from cities; </CommandText>
+      </Query>
+      <Fields>
+        <Field Name="id">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>id</DataField>
+        </Field>
+        <Field Name="name">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>name</DataField>
+        </Field>
+        <Field Name="province_id">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>province_id</DataField>
+        </Field>
+        <Field Name="created_at">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>created_at</DataField>
+        </Field>
+        <Field Name="updated_at">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>updated_at</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -150,16 +178,16 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.93682cm</Width>
+                  <Width>2.94627cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.93682cm</Width>
+                  <Width>2.76106cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>6.43682cm</Width>
+                  <Width>5.93815cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>6.43682cm</Width>
+                  <Width>5.95765cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -213,7 +241,7 @@
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -270,7 +298,7 @@
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -327,7 +355,7 @@
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -384,7 +412,7 @@
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
-                            <BackgroundColor>White</BackgroundColor>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -601,6 +629,7 @@
               <TablixMembers>
                 <TablixMember>
                   <KeepWithGroup>After</KeepWithGroup>
+                  <RepeatOnNewPage>true</RepeatOnNewPage>
                 </TablixMember>
                 <TablixMember>
                   <Group Name="Detalles" />
@@ -609,9 +638,9 @@
             </TablixRowHierarchy>
             <DataSetName>users</DataSetName>
             <Top>2cm</Top>
-            <Left>0.75cm</Left>
+            <Left>0.39688cm</Left>
             <Height>1.5cm</Height>
-            <Width>16.74729cm</Width>
+            <Width>17.60313cm</Width>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -658,6 +687,7 @@
             <Source>Embedded</Source>
             <Value>mqtt</Value>
             <Sizing>FitProportional</Sizing>
+            <Top>0cm</Top>
             <Left>13.97cm</Left>
             <Height>1.48167cm</Height>
             <Width>4.03cm</Width>
@@ -676,8 +706,52 @@
           </Border>
         </Style>
       </Body>
-      <Width>18cm</Width>
+      <Width>18.39688cm</Width>
       <Page>
+        <PageHeader>
+          <Height>2.43417cm</Height>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="ReportName1">
+              <rd:DefaultName>ReportName1</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>HEADER</Value>
+                      <Style>
+                        <FontSize>16pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Height>2.43417cm</Height>
+              <Width>18cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
         <PageFooter>
           <Height>11.43mm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
@@ -725,7 +799,6 @@
         <PageWidth>21cm</PageWidth>
         <LeftMargin>1.5cm</LeftMargin>
         <RightMargin>1.5cm</RightMargin>
-        <TopMargin>1.5cm</TopMargin>
         <BottomMargin>1.5cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
@@ -735,6 +808,11 @@
   <ReportParameters>
     <ReportParameter Name="city_id">
       <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>4124</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>ID Ciudad</Prompt>
       <ValidValues>
         <DataSetReference>
